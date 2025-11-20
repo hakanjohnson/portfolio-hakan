@@ -11,3 +11,31 @@
     font-optical-sizing: auto;
     font-size: 16px;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+}
+
+header>nav>ul>li {
+    display: inline;
+    margin: 0 15px; 
+} 
+
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

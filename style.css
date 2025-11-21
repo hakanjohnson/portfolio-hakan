@@ -9,7 +9,52 @@
     box-sizing: border-box;
     font-family: "Stack Sans Notch", sans-serif;
     font-optical-sizing: auto;
-    font-size: 16px;
+    font-size: calc(16px + 1.0vw);
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.about {
+    background-image: url(hero_2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+    background-color: #000000;
+    color: honeydew;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+.story {
+    background-color: #000000;
+    color: honeydew;
+}
+
+.name {
+    font-size: 2rem;
+}
+
+.titel {
+    font-size: 1rem;
+}
+
+.spruch {
+    font-size: 0.8rem;
+}
+
+.name, .titel, .spruch {
+    text-shadow: 4px 4px 4px #161414;
+    color: honeydew;
 }
 
 body {
@@ -17,7 +62,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 90%;
+    width: 100%;
 }
 
 header>nav>ul>li {
@@ -25,8 +70,8 @@ header>nav>ul>li {
     margin: 0 15px; 
 } 
 
-section {
-    width: 80%;
+.content {
+    padding: 0.5rem 20px;
     margin: 0 auto;
 }
 
@@ -37,5 +82,5 @@ section {
 
 a {
     text-decoration: none;
-    color: black;
+    color: honeydew;
 }

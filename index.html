@@ -5,37 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakan Johnson - Webentwicklung</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fonts.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">Über Mich</a></li>
-                <li><a href="">Projekte</a></li>
-                <li><a href="">Fähigkeiten</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
         <section class="about">
             <h1 class="name">Hakan Johnson</h1>
-            <h3 class="titel">Webentwickler</h3>
+            <h2 class="titel">Webentwickler</h2>
             <p class="spruch">{ individuell, modern, für dich } ;</p>
         </section>
         <section class="content">
-            <h1>Willkommen</h1>
-            <p>Ich bin ein Webentwickler mit Leidenschaft für sauberen Code und benutzerfreundliche Designs.</p>
+            <h2>Willkommen</h2>
+            <p>Ich bin Webentwickler mit Leidenschaft für sauberen Code und benutzerfreundliche Designs.</p>
         </section>
         <section class="content story">
             <h2>Über</h2>
             <h1>Meine Geschichte und mein Handwerk</h1>
             <p>Das Designen und Entwickeln, von der einfachen Skizze bis hin zur funktionierenden Webseite ist meine Leidenschaft. Nach vielen Jahren habe ich mein Hobby zum Beruf gemacht. Mein Fokus liegt auf Qualität und Zuverlässigkeit.</p>
-            <button>Mehr erfahren</button>
-            <button>Kontaktieren</button>
-        </section>
-        <section>
-            <img class="hero" src="hero_2.jpg" alt="Bild von HTML / CSS Code">
+            <button class="bmore">Mehr erfahren</button>
+            <button class="bkontakt">Kontaktieren</button>
         </section>
         <section class="content">
             <h2>Fähigkeiten</h2>
@@ -47,7 +34,7 @@
         </section>
         <section class="content">
             <h2>Portfolio</h2>
-            <h1>Aktuelle Arbeiten</h1>
+            <h3>Aktuelle Arbeiten</h3>
             <h3>Eine Auswahl meiner Projekte aus den letzten Jahren</h3>
             <div class="card"></div>
             <div class="card"></div>
@@ -55,11 +42,42 @@
         </section>
         <section class="content">
             <div class="kontakt"></div>
-            <div class="formular"></div>
+            <div class="formular">
+                <form action="">
+                    <input type="text">
+                    <input type="text">
+                    <input type="email">
+                    <input type="tel">
+                    <select name="" id="">
+                        <option value="">Bitte wählen...</option>
+                        <option value="">Test1</option>
+                        <option value="">Test2</option>
+                        <option value="">Test3</option>
+                    </select>
+                    <textarea name="" id="" rows="6"></textarea>
+                    <label for="">Ich akzeptiere die Nutzungsbedingungen</label>
+                    <input type="checkbox">
+                </form>
+            </div>
         </section>
     </main>
     <footer>
-
+        <div class="footer-group">
+            <h4>Kontakt</h4>
+            <p>mail@hakan-johnson.de</p>
+            <p>+49 176 4426 6356</p>
+            <p>Auf der Beune 36, 64839 Münster(Hessen), Deutschland</p>
+        </div>
+        <div class="footer-group">
+            <h4>Rechtliches</h4>
+            <p>Impressum</p>
+            <p>Datenshutz</p>
+            <p>Nutzungsbedingungen</p>
+            <p>AGB</p>
+        </div>
+        <div>
+            <p class="footer-group copy">© 2025 Hakan Johnson - Webentwicklung. Alle Rechte vorbehalten.</p>
+        </div>
     </footer>
 </body>
 </html>

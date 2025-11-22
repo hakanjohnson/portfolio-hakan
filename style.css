@@ -7,13 +7,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Stack Sans Notch", sans-serif;
+    font-family: system-ui, "Stack Sans Notch", sans-serif;
     font-optical-sizing: auto;
-    font-size: calc(16px + 1.0vw);
+    font-size: 16px;
 }
 
 body {
     scroll-behavior: smooth;
+    background-color: #f7f7f6;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .about {
@@ -22,34 +36,27 @@ body {
     background-position: center;
     height: 500px;
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem 0;
-    background-color: #000000;
-    color: honeydew;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-}
+
 .story {
-    background-color: #000000;
-    color: honeydew;
+    background-color: honeydew;
+    color: #262626;
 }
 
 .name {
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 .titel {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 .spruch {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .name, .titel, .spruch {
@@ -58,6 +65,7 @@ nav {
 }
 
 body {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,4 +91,47 @@ header>nav>ul>li {
 a {
     text-decoration: none;
     color: honeydew;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2a2a2a;
+}
+
+footer {
+    margin: 20px 0 0 0;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    background-color: #262626;
+    color: honeydew;
+}
+
+.copy
+{
+    font-size: 0.7rem;
+    color: honeydew;
+}
+
+.footer-group {
+    margin: 30px 0 0 0;
+}
+
+.footer-group * {
+    margin: 5px 0;
+    font-size: 0.8rem;
+}
+
+.bmore, .bkontakt {
+    margin: 10px 10px 0 0;
+    padding: 10px 20px;
+    border: none;
+    min-width: 150px;
+    max-width: 150px;
+    background-color: #262626;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
 }

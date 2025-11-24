@@ -12,20 +12,20 @@
         <section class="about dark">
             <h1 class="name">Hakan Johnson</h1>
             <h2 class="titel">Webentwickler</h2>
-            <p class="spruch">{ individuell, modern, für dich } ;</p>
+            <p class="spruch">individuell, modern, für dich</p>
         </section>
-        <section class="content">
+        <section class="content greeting">
             <h1>Willkommen</h1>
-            <p>Ich bin Webentwickler mit Leidenschaft für sauberen Code und benutzerfreundliche Designs.</p>
+            <p>Ich bin Webentwickler mit Leidenschaft und erstelle individuelle Webseiten mit modernen Designs.</p>
         </section>
         <section class="content story dark">
             <h2>Über</h2>
             <h1>Meine Geschichte und mein Handwerk</h1>
-            <p>Das Designen und Entwickeln, von der einfachen Skizze bis hin zur funktionierenden Webseite ist meine Leidenschaft. Nach vielen Jahren habe ich mein Hobby zum Beruf gemacht. Mein Fokus liegt auf Qualität und Zuverlässigkeit.</p>
+            <p>Das Designen und Entwickeln, von dem einfachen Entwurf bis hin zur funktionierenden Webseite ist meine Leidenschaft. Nach vielen Jahren habe ich mein Hobby zum Beruf gemacht. Mein Fokus liegt auf Qualität und Zuverlässigkeit.</p>
             <button class="bmore">Mehr erfahren</button>
             <button class="bkontakt">Kontaktieren</button>
         </section>
-        <section class="content">
+        <section class="content skill">
             <h2>Fähigkeiten</h2>
             <h1>Was ich beherrsche</h1>
             <h3>Technologien und Werkzeuge für moderne Webentwicklung</h3>
@@ -43,28 +43,31 @@
         </section>
         <section class="content">
             <h2>Nachricht</h2>
-            <h1>Schreiben Sie Mir</h1>
-            <p>Füllen Sie das Formular aus und ich antworte schnell</p>
+            <h1>Schreib Mich An</h1>
+            <p>Fülle das Formular aus und ich antworte schnell</p>
             <div class="formular">
                 <form action="sendForm.php">
-                    <label for="">Vorname</label>
-                    <input class="inname" type="text">
-                    <label for="">Nachname</label>
-                    <input class="inname" type="text">
-                    <label for="">E-Mail</label>
-                    <input type="email">
-                    <label for="">Telefonnummer</label>
-                    <input type="tel">
-                    <label for="Worum geht es"></label>
-                    <select name="" id="">
+                    <label for="">Vorname *</label>
+                    <input class="inname" type="text" required>
+                    <label for="">Nachname *</label>
+                    <input class="inname" type="text" required>
+                    <label for="">E-Mail *</label>
+                    <input type="email" required>
+                    <label for="">Telefonnummer (optional)</label>
+                    <input type="tel" placeholder="+49 0123 4567 89">
+                    <label for="betreff">Worum geht es *</label>
+                    <select name="" id="" required>
                         <option value="">Bitte wählen...</option>
-                        <option value="">Test1</option>
-                        <option value="">Test2</option>
-                        <option value="">Test3</option>
+                        <option value="">Allgemeine Anfrage</option>
+                        <option value="">Neue Webseite erstellen</option>
+                        <option value="">Bestehend Webseite optimieren</option>
                     </select>
-                    <label for="">Nachricht</label>
-                    <textarea name="" id="" rows="6"></textarea>
-                    <span><input id="yes" type="checkbox">Ich akzeptiere die Nutzungsbedingungen</span>
+                    <label for="">Nachricht *</label>
+                    <textarea name="" id="" rows="6" required></textarea>
+                    <p>* Pflichtangaben</p>
+                        <input id="yes" type="checkbox" required>
+                        <p>Ich akzeptiere die Nutzungsbedingungen</p>
+                    <input id="submit" name="submit" type="submit" value="Senden">
                 </form>
             </div>
         </section>

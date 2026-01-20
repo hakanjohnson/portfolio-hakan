@@ -1,294 +1,36 @@
-/* style.css */
-/* Importing the Stack Sans Notch font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap');
-
-/* root */
-
-:root {
-    --primary-color: #dd9048;
-    --secondary-color: #ededed;
-    --accent-color: #d6593d;
-    --background-color: #e0e0e0;
-    --text-color-light: #000000;
-    --text-color-dark: #ffffff;
-}
-
-* {
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, "Stack Sans Notch", sans-serif;
-    font-optical-sizing: auto;
-    font-size: 16px;
 }
 
-body {
-    scroll-behavior: smooth;
-    background-color: #e0e0e0;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.about {
-    background-image: url(hero_2.jpg);
-    background-size: cover;
-    background-position: center;
-    margin: 0 0 25px 0;
-    height: 100dvh;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.content {
-    width: 90%;
-    height: auto;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.story  {
-    background-image: linear-gradient(45deg, #5dd2b5, #1b8e71, #5dd2b5);
-    width: 90%;
-    height: auto;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.skill, .greeting{
-    background-color: #ededed;
-    width: 90%;
-    height: auto;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.portfolio {
-    background-image: linear-gradient(45deg, #5dd2b5, #1b8e71, #5dd2b5);
-}
-
-.name {
-    font-size: 4rem;
-}
-
-.titel {
-    font-size: 2rem;
-}
-
-.spruch {
-    font-size: 1rem;
-}
-
-.name, .titel, .spruch {
-    text-shadow: 4px 4px 4px #161414;
-}
-
-body {
+.section {
+    padding: 60px 20px;
+    max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-}
-section {
-    min-height: auto;
-    box-shadow: 2px 2px 5px #0000001a;
 }
 
-header>nav>ul>li {
-    display: inline;
-    margin: 0 15px; 
+.buttons button {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
-.pp {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border: solid 3px #ffffff;
-    border-radius: 100%;
-    margin-bottom: 20px;
+.button_dark {
+    background-color: #333;
+    color: #fff;
 }
 
-.content {
-    padding: 2rem 20px;
-    margin: 25px auto;
-    box-shadow: 2px 2px 5px #939191;
-}
-
-.hero {
-    width: 100%;
-    height: auto;
-}
-
-a {
-    text-decoration: none;
-    color: honeydew;
-}
-h1 {
-    font-size: 2.0rem;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 1.0rem;
-    margin-bottom: 10px;
-}
-
-.dark h1, .dark h2, .dark h3, .dark p {
-    color: #ffffff;
-}
-
-.light h1, .light h2, light h3, .light p {
-    color: #000000;
+.button_light {
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 footer {
-    margin: 20px 0 0 0;
+    text-align: center;
     padding: 20px;
-    text-align: left;
-    width: 100%;
-    background-color: #262626;
-    color: honeydew;
-}
-
-.copy
-{
-    font-size: 0.7rem;
-    color: honeydew;
-}
-
-.footer-group {
-    margin: 30px 0 0 0;
-}
-
-.footer-group * {
-    margin: 5px 0;
-    font-size: 0.8rem;
-}
-
-.bmore, .bkontakt {
-    margin: 20px 10px 0 0;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 2px;
-    min-width: 150px;
-    max-width: 150px;
-    background-color: #262626;
-    color: #ffffff;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.bmore:hover, .bkontakt:hover {
-    background-color: #ededed;
-    color: #262626;
-}
-
-.bgGelb {
-    background-color: #ededed
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 20px auto;
-    
-}
-
-.inname, input, textarea, select {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-bottom: 2rem;
-}
-
-#yes {
-    display: inline-block;
-}
-
-label {
-    align-self: flex-start;
-    margin-left: 10px;
-    font-size: 0.9rem;
-}
-
-#submit {
-    width: auto;
-    padding: 10px 20px;
-    background-color: #7487df;
-    color: #ffffff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#submit:hover {
-    background-color: #90e32b;
-}
-
-/* Karussell */
-.carousel-container {
-    width: 90%;
-    overflow: visible;
-    padding: 10px 0;
-}
-
-.carousel {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-
-}
-
-.carousel::-webkit-scrollbar {
-    display: none;
-
-}
-
-.card {
-    width: 100px;
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-    border-radius: 15px;
-    overflow: hidden;
-    border: solid 2px #cccccc;
-    background-image: linear-gradient(45deg, #efefef, #ffffff, #efefef);
-    color: #303030;
-}
-
-.card p {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-
+    background-color: #f4f4f4;
+    margin-top: 40px;
 }

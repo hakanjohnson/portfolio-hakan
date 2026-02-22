@@ -115,6 +115,38 @@ section {
 
 /**Navigation**/
 
+/* Grundzustand: Die Menüleiste ist unsichtbar und nach oben verschoben */
+.nav-links {
+    display: none; /* Oder nutze opacity: 0 für Animationen */
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    background-color: #f4f4f4; /* Beispielfarbe */
+    border: 1px solid #ccc;
+}
+
+/* Wenn die Checkbox aktiviert ist, zeige die Liste an */
+#menu-toggle:checked ~ .nav-links {
+    display: block;
+}
+
+/* Optional: Ein bisschen Styling für die Links */
+.nav-links li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Cursor-Pointer für das Icon, damit man sieht, dass es klickbar ist */
+.menu_icon_trigger {
+    cursor: pointer;
+    display: inline-block;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -158,4 +190,40 @@ section {
 
 section {
     max-width: 600px;
+}
+
+/* Der Container, der das Icon und das Menü hält, 
+   muss relativ sein, damit "absolute" darin funktioniert */
+header, .nav-container { 
+    position: relative; 
+}
+
+.nav-links {
+    visibility: hidden;
+    list-style: none;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    margin: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+
+    /* --- DER WICHTIGE TEIL --- */
+    position: absolute;  /* Schwebt über dem Content */
+    top: 70px;           /* Abstand zum oberen Rand (an dein Icon anpassen) */
+    right: 0;             /* Oder right: 0; je nach Design */
+    z-index: 1000;       /* Sorgt dafür, dass es ÜBER allem anderen liegt */
+    width: 200px;        /* Feste Breite, damit es nicht die ganze Zeile füllt */
+}
+
+/* Einblenden bei Klick */
+#menu-toggle:checked ~ .nav-links {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Verhindert das Verschieben der Menüpunkte selbst */
+.nav-links li {
+    display: block;
+    padding: 8px 12px;
 }

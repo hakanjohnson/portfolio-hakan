@@ -24,8 +24,7 @@ a {
 
 body {
     color: rgb(234, 234, 234);
-    padding: 10px;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: var(--secondary-color);
     display: flex;
@@ -40,6 +39,28 @@ section {
     justify-content: center;
     text-align: center;
     padding: 50px 20px;
+    width: 100%;
+}
+
+/**Liste**/
+
+
+li {
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.liste_ps {
+    display: flex;
+    flex-direction: row;
+}
+
+/**Section Box**/
+.section_light {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    max-width: 800px;
     width: 100%;
 }
 

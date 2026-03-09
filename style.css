@@ -1,6 +1,6 @@
 :root {
     --primary-color: #ebebeb;
-    --secondary-color: rgb(62, 62, 62);
+    --secondary-color: #1e1e1e;
     --accent-color: #756dc1;
     --hover-color: #e1cf49;
 }
@@ -13,6 +13,7 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 /**Global Styles**/
 a {
@@ -60,7 +61,6 @@ li {
 .section_light {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    max-width: 800px;
     width: 100%;
 }
 
@@ -68,34 +68,26 @@ li {
 
 .btn_dark {
     background-color: var(--primary-color);
-    border-radius: 4px;
+    border-radius: 20px;
     color: var(--secondary-color);
+    border: solid 2px var(--accent-color);
     padding: 10px 20px;
     cursor: pointer;
     transition: all 0.3s ease;
-}
-
-.btn_dark:hover {
-    background-color: var(--hover-color);
-    color: var(--primary-color);
 }
 
 .btn_light {
     background-color: var(--accent-color);
-    border-radius: 4px;
+    border-radius: 20px;
     color: var(--primary-color);
     padding: 10px 20px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
-.btn_light:hover {
-    background-color: var(--hover-color);
-    color: var(--primary-color);
-}
-
 .btn_dark, .btn_light {
     width: 200px;
+    padding: 14px 0;
     text-align: center;
 }
 
@@ -121,6 +113,15 @@ li {
     60% {
         transform: translateY(-5px);
     }
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 100%;
+    text-align: center;
 }
 
 /**Logo**/
@@ -187,11 +188,17 @@ li {
 
 .hero_name {
     color: var(--accent-color);
+
 }
 
+.hero_text {
+    max-width: 600px;
+    margin: 20px auto;
+}
 
-.hero h1, .hero h2, .hero p, .hero img {
-    margin-bottom: 20px;
+.light {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 section {
@@ -262,4 +269,15 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: var(--hover-color);
+}
+
+/** Karten **/
+.card {
+    background-color: white;
+    color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }

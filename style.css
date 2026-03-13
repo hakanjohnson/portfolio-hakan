@@ -159,9 +159,17 @@ footer {
     border: 1px solid #ccc;
 }
 
+.skill_header {
+    color: var(--accent-color);
+    margin-top: 15px;
+    font-weight: bold;
+    margin: 0px 20px 16px 20px;
+}
+
 /* Wenn die Checkbox aktiviert ist, zeige die Liste an */
 #menu-toggle:checked ~ .nav-links {
     display: block;
+    width: 100%;
 }
 
 /* Optional: Ein bisschen Styling für die Links */
@@ -291,5 +299,12 @@ input[type="submit"]:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
     width: 250px;
-    height: 300px;
+    min-height: 300px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    transform: rotateX(20px);
+    box-shadow: 1px 1px 10px 5px var(--accent-color);
+    transition: all 0.3s ease;
 }

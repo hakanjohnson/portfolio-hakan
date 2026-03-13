@@ -83,6 +83,12 @@ li {
     transition: all 0.3s ease;
 }
 
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--accent-color);
+    margin-top: 15px;
+}
 
 .card_wrapper {
     display: flex;
@@ -278,7 +284,8 @@ input[type="submit"]:hover {
 .card {
     background-color: white;
     color: var(--secondary-color);
-    border-radius: 8px;
+    border-radius: 14px;
+    border: solid 4px var(--accent-color);
     padding: 25px;
     margin: 25px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);

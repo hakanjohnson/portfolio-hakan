@@ -210,6 +210,10 @@ footer {
     display: none;
 }
 
+.hero {
+    min-height: 100vh;
+}
+
 
 .hero_name {
     color: var(--accent-color);

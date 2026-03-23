@@ -14,8 +14,13 @@
     font-weight: 500;
     font-style: normal;
     scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
     font-size: 16px;
 }
+
 /**Global Styles**/
 a {
     text-decoration: none;
@@ -90,9 +95,9 @@ li {
     color: var(--accent-color);
     position: absolute;
     bottom: 0;
-    left: 33%;
     margin: 0 auto;
     margin-bottom: 16px;
+    left: 33%;
 }
 
 .card_wrapper {
@@ -177,6 +182,7 @@ footer {
     width: 100%;
 }
 
+
 /* Optional: Ein bisschen Styling für die Links */
 .nav-links li {
     padding: 10px;
@@ -203,7 +209,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: transparent;
     width: 100%;
 }   
 
@@ -212,9 +217,12 @@ footer {
 }
 
 .hero {
-    background-image: url("pexels-harold-vasquez-853421-2653362.jpg");
+    background-image: linear-gradient(#000000bc, #232323a9), url('img/img_hero_banner.jpg');
     min-height: 100vh;
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
 }
 
 
@@ -253,7 +261,7 @@ header, .nav-container {
 
     /* --- DER WICHTIGE TEIL --- */
     position: absolute;  /* Schwebt über dem Content */
-    top: 70px;           /* Abstand zum oberen Rand (an dein Icon anpassen) */
+    top: 60px;           /* Abstand zum oberen Rand (an dein Icon anpassen) */
     right: 0;             /* Oder right: 0; je nach Design */
     z-index: 1000;       /* Sorgt dafür, dass es ÜBER allem anderen liegt */
     width: 200px;        /* Feste Breite, damit es nicht die ganze Zeile füllt */
@@ -314,12 +322,26 @@ input[type="submit"]:hover {
     transition: transform 0.3s ease;
     width: 290px;
     min-height: 300px;
-
+    text-align: center;
+    align-items: center;
 }
+
+
 
 .card:hover {
     transform: translateY(-10px);
     transform: rotateX(20px);
     box-shadow: 1px 1px 10px 5px var(--accent-color);
     transition: all 0.3s ease;
+}
+
+.impressum h2 {
+    width: 100%;
+}
+
+.impressum p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 600px;
 }

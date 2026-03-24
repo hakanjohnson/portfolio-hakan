@@ -113,6 +113,7 @@ li {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin: 20px auto;
 }
 
 .btn {
@@ -132,12 +133,14 @@ li {
 .card-special {
     background: linear-gradient(90deg, var(--color-accent-1), var(--color-accent-2));
     border-radius: 25px;
-    position: relative;
-    top: -40px;
+    position: absolute;
+    top: -15px;
+    left: 70px;
     color: #ffffff;
     width: 150px;
     display: flex;
     justify-content: center;
+    gap: 10px;
 
 }
 
@@ -211,9 +214,8 @@ footer {
 
 .skill_header {
     color: var(--color-text-header-standard);
-    margin-top: 15px;
     font-weight: bold;
-    margin: 0px 20px 16px 20px;
+    margin: 20px 20px 16px 20px;
 }
 
 /* Wenn die Checkbox aktiviert ist, zeige die Liste an */

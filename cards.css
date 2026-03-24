@@ -70,6 +70,10 @@ ul li {
 
 }
 
+.card-extra {
+    border: solid 4px var(--color-accent-2);
+}
+
 .kleinge {
     font-size: 0.8rem;
 }
@@ -80,7 +84,9 @@ ul li {
     align-items: center;
     text-align: center;
     gap: 10px;
-    height: 150px;
+    height: 120px;
+    width: 70%;
+    margin: 0 auto;
 
 }
 

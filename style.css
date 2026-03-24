@@ -1,8 +1,11 @@
 :root {
-    --primary-color: #ebebeb;
-    --secondary-color: #1e1e1e;
-    --accent-color: #756dc1;
+    --color-bg-1: #f7f4f4;
+    --color-bg-2: #eeedee;
+    --color-accent-1: #592da0;
+    --color-accent-2: #b026bc;
     --hover-color: #e1cf49;
+    --color-text-header-standard: #151515;
+    --color-text-standard: #5c5c5c;
 }
 
 * {
@@ -33,7 +36,7 @@ body {
     color: rgb(234, 234, 234);
     width: 100%;
     height: 100vh;
-    background-color: var(--secondary-color);
+    background-color: var(--color-bg-1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,6 +73,11 @@ li {
     width: 100%;
 }
 
+#pakete {
+    background-color: #eae5e5;
+    backdrop-filter: blur(20px);
+}
+
 /**Button**/
 
 .btn_dark {
@@ -90,14 +98,14 @@ li {
 }
 
 .price {
-    font-size: 1.5em;
+    font-size: 2rem;
     font-weight: bold;
-    color: var(--accent-color);
-    position: absolute;
-    bottom: 0;
+    background: linear-gradient(90deg, var(--color-accent-1), var(--color-accent-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin: 0 auto;
     margin-bottom: 16px;
-    left: 33%;
+
 }
 
 .card_wrapper {
@@ -107,9 +115,8 @@ li {
     justify-content: center;
 }
 
-.btn_dark, .btn_light {
-    width: 200px;
-    padding: 14px 0;
+.btn {
+    padding: 15px 20px;
     text-align: center;
 }
 
@@ -140,8 +147,8 @@ li {
 footer {
     margin-top: 50px;
     padding: 20px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--color-bg-1);
+    color: var(--color-text-header-standard);
     width: 100%;
     text-align: center;
 }
@@ -157,6 +164,26 @@ footer {
     margin-left: 10px;
 }
 
+.spruch-hell {
+    margin: 20px;
+    font-size: 0.8rem;
+    background-image: linear-gradient(90deg, var(--color-accent-1), var(--color-accent-2));
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+
+}
+
+.spruch {
+    padding: 8px 20px;
+}
+
+.spruch img {
+    margin-right: 5px;
+}
+
+
 /**Navigation**/
 
 /* Grundzustand: Die Menüleiste ist unsichtbar und nach oben verschoben */
@@ -170,7 +197,7 @@ footer {
 }
 
 .skill_header {
-    color: var(--accent-color);
+    color: var(--color-text-header-standard);
     margin-top: 15px;
     font-weight: bold;
     margin: 0px 20px 16px 20px;
@@ -210,6 +237,10 @@ footer {
     align-items: center;
     padding: 10px 20px;
     width: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.918);
+    backdrop-filter: blur(5px);
+    z-index: 9999;
 }   
 
 .nav-links {
@@ -217,14 +248,23 @@ footer {
 }
 
 .hero {
-    background-image: linear-gradient(#000000bc, #232323a9), url('img/img_hero_banner.jpg');
+    
     min-height: 100vh;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    margin-top: 50px;
 
 }
 
+.hero_header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
 
 .hero_name {
     color: var(--accent-color);
@@ -281,6 +321,10 @@ header, .nav-container {
 
 /** Kontaktformular**/
 
+.kontakt {
+    margin-top: 100px;
+}
+
 .formular {
     display: flex;
     flex-direction: column;
@@ -313,17 +357,15 @@ input[type="submit"]:hover {
 .card {
     position: relative;
     background-color: white;
-    color: var(--secondary-color);
+    color: var(--color-text-standard);
     border-radius: 14px;
     border: solid 4px var(--accent-color);
     padding: 25px;
-    margin: 25px;
+    margin: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    width: 290px;
+    width: 300px;
     min-height: 300px;
-    text-align: center;
-    align-items: center;
 }
 
 
@@ -331,7 +373,7 @@ input[type="submit"]:hover {
 .card:hover {
     transform: translateY(-10px);
     transform: rotateX(20px);
-    box-shadow: 1px 1px 10px 5px var(--accent-color);
+    box-shadow: 1px 1px 8px 4px var(--color-accent-1);
     transition: all 0.3s ease;
 }
 
@@ -344,4 +386,9 @@ input[type="submit"]:hover {
     line-height: 1.5;
     margin: 0 auto;
     max-width: 600px;
+}
+
+.impressum {
+    margin-top: 100px;
+    padding: 10px;
 }

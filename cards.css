@@ -1,9 +1,14 @@
 h1 {
-    color: var(--accent-color);
+    color: var(--color-accent-1);
     font-size: 1rem;
     font-weight: bold;
     margin: 0 auto;
 
+}
+
+h2 {
+    color: var(--color-text-header-standard);
+    font-size: 2rem;
 }
 
 p {
@@ -11,25 +16,37 @@ p {
     line-height: 1.5;
     margin: 0 auto;
     max-width: 600px;
+    color: var(--color-text-standard);
 }
 
-h2 {
-    color: var(--accent-color);
-    font-size: 2rem;
-    font-weight: bold;
+.hero-header-top, .hero-header-bot {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bolder;
     margin: 0 auto;
+}
+
+.hero-header-top {
+    color: var(--color-text-header-standard);
+}
+
+.hero-header-bot {
+    background: linear-gradient(90deg, var(--color-accent-1), var(--color-accent-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 h4 {
-    color: var(--accent-color);
+    color: var(--color-text-standard);
     margin-top: 15px;
-    font-weight: bold;
     margin: 0 auto;
     margin-bottom: 16px;
+    font-size: 0.8rem;
 }
 
 h5 {
-    color: var(--accent-color);
+    color: var(--color-text-standard);
     margin-top: 10px;
     font-size: 1.2rem;
     font-weight: bold;
@@ -39,28 +56,37 @@ h5 {
     list-style-type: circle;
 }
 
-.card_header {
+ul li {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    height: 200px;
-
+    gap: 5px
 }
 
 .card_content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: left;
     gap: 10px;
     margin-bottom: 20px;
     height: 350px;
+
+}
+
+.kleinge {
+    font-size: 0.8rem;
+}
+
+.card_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 10px;
+    height: 150px;
+
 }
 
 @media (min-width: 768px) {
     h1 {
-    color: var(--accent-color);
+    color: var(--color-text-header-standard);
     font-size: 1rem;
     font-weight: bold;
     margin: 0 auto;
@@ -75,22 +101,22 @@ p {
 }
 
 h2 {
-    color: var(--accent-color);
-    font-size: 4rem;
+    color: var(--color-text-header-standard);
+    font-size: 2rem;
     font-weight: bold;
     margin: 0 auto;
 }
 
 h4 {
-    color: var(--accent-color);
+    color: var(--color-text-standard);
     margin-top: 15px;
-    font-weight: bold;
     margin: 0 auto;
     margin-bottom: 16px;
+    font-size: 0.8rem;
 }
 
 h5 {
-    color: var(--accent-color);
+    color: var(--color-text-standard);
     margin-top: 10px;
     font-size: 1.2rem;
     font-weight: bold;

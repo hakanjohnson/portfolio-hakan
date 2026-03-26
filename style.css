@@ -401,6 +401,15 @@ input[type="submit"]:hover {
     min-height: 300px;
 }
 
+.price_light, h4 {
+    color: var(--color-bg-1);
+}
+
+.card_dark {
+    background: linear-gradient(30deg, var(--color-accent-1), var(--color-accent-2));
+    color: var(--color-bg-1);
+}
+
 
 
 .card:hover {

@@ -134,6 +134,13 @@ li {
     gap: 30px;
     justify-content: center;
 }
+.contact {
+    color: var(--color-accent-1);
+}
+
+.contact:hover {
+    color: var(--hover-color);
+}
 
 .section_header {
     margin: 40px auto;
@@ -198,6 +205,8 @@ footer {
     color: var(--color-bg-1);
     width: 100%;
     text-align: center;
+    position: relative;
+    bottom: 0;
 }
 
 /**Logo**/

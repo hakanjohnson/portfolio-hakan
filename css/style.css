@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 1200px;
 }
 
 #profilbild {
@@ -509,11 +510,14 @@ input[type="submit"]:hover {
     color: var(--color-text-standard);
     border-radius: 14px;
     border: solid 4px var(--accent-color);
-    padding: 25px;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    width: 500px;
-    min-height: 300px;
+    width: 100%;
+    min-height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .price_light, h4 {

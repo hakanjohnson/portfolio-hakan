@@ -51,7 +51,7 @@
     box-sizing: border-box;
     font-family: "Barlow Semi Condensed", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
     scroll-behavior: smooth;
 }
@@ -540,7 +540,7 @@ input[type="submit"]:hover {
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    width: 100%;
+    width: 300px;
     min-height: min-content;
     display: flex;
     flex-direction: column;

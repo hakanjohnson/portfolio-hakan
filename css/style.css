@@ -384,6 +384,12 @@ footer {
 
 }
 
+@media (max-width: 700px) {
+    .hero {
+        background-image: none;
+    }   
+}
+
 .hero_header {
     display: flex;
     flex-direction: column;

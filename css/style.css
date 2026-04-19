@@ -1,8 +1,8 @@
 :root {
     --color-bg-1: #f7f4f4;
     --color-bg-2: #eeedee;
-    --color-accent-1: #170842;
-    --color-accent-2: #1a2047;
+    --color-accent-1: #5b4d86;
+    --color-accent-2: #2e366b;
     --hover-color: #e1cf49;
     --color-text-header-standard: #151515;
     --color-text-standard: #363636;
@@ -18,6 +18,17 @@
 
 #pakete {
     margin-top: 60px;
+}
+
+.page {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 #port {
@@ -57,6 +68,22 @@
     width: 300px;
 }
 
+footer {
+    background-color: var(--color-accent-1);
+    color: var(--color-bg-1);
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    padding: 30px;
+}
+
+
 @media (min-width: 700px) {
     #port {
     position: absolute;
@@ -67,17 +94,17 @@
     }
 
     footer {
-    padding: 20px;
-    background: linear-gradient(90deg, var(--color-accent-1), var(--color-accent-2));
+    background-color: var(--color-accent-1);
     color: var(--color-bg-1);
     width: 100%;
-    height: 200px;
+    min-height: 80px;
     text-align: center;
     position: relative;
     bottom: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
 
 }
 
@@ -312,23 +339,13 @@ section {
     }
 }
 
-footer {
-    padding: 20px;
-    background: linear-gradient(90deg, var(--color-accent-1), var(--color-accent-2));
-    color: var(--color-bg-1);
-    width: 100%;
-    height: 200px;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-}
-
 /**Logo**/
 
 .logo {
     display: flex;
     align-items: left;
     overflow: hidden;
+    padding-top: 5px;
 }
 
 .headerText {
@@ -363,7 +380,7 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     gap: 20px;
 }
@@ -439,7 +456,7 @@ footer {
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(90deg, #212038, #a299bb);
+    background-image: linear-gradient(90deg, #7e5dc5, #ebebeb);
     background-attachment: fixed;
     padding-top: 100px;
     overflow: hidden;
@@ -521,13 +538,12 @@ header, .nav-container {
 }
 
 .button-n {
-    border-radius: 25px;
-    background-color: white;
-    color: #151515;
-    min-width: auto;
-    margin: 30px 0;
+    border-radius: 12px;
+    background-color: var(--color-bg-1);
+    color: var(--color-text-standard);
     padding: 10px 20px;
-    box-shadow: 0 4px 8px rgba(19, 19, 19, 0.712);
+    margin-top: 20px;
+    display: inline-block;
 }
 
 .button-portfolio {

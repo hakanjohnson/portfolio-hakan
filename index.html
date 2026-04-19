@@ -6,12 +6,18 @@
     <title>Hakan Johnson.de - Webentwicklung</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cards.css">
+    <meta name="description" content="Hakan Johnson - Professionelle Webentwicklung für Selbständige und kleine Unternehmen. Individuelle Websites, modernes Design, zuverlässiger Service.">
+    <meta name="keywords" content="Webentwicklung, Webdesign, Selbständige, kleine Unternehmen, professionelle Websites, individuelle Lösungen, responsive Design, SEO, Support">
+    <meta name="author" content="Hakan Johnson">
+    <meta property="og:title" content="Hakan Johnson.de - Webentwicklung">
+    <meta property="og:description" content="Hakan Johnson - Professionelle Webentwicklung für Selbständige und kleine Unternehmen. Individuelle Websites, modernes Design, zuverlässiger Service.">
+    <meta property="og:image" content="img/IMG_8106.jpg">
+    <meta property="og:url" content="https://www.hakanjohnson.de">
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="img/page_menu_ios_24dp_592DA0_FILL0_wght400_GRAD0_opsz24.svg" alt="" width="40px">
-            <div class="headerText"><a href="index.html"><h1>Hakan Johnson<br>Webentwicklung</h1></a></div>
+            <!--<img id="logo" src="img/logo_transparent.png" alt="Hakan Johnson Logo" width="500px">-->
         </div>
         <input type="checkbox" id="menu-toggle" style="display: none;">
 
@@ -22,25 +28,36 @@
             <ul class="nav-links">
                 <li><a href="index.html">Startseite</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
-                <li><a href="#pakete">Angebote</a></li>
+                <li><a href="pakete.html">Preise</a></li>
                 <li><a href="impressum.html">Impressum</a></li>
             </ul>
     </nav>
     <section class="hero">
-        <span class="spruch spruch-hell"><img src="img/stern.svg" alt="">Online sichtbar - so einfach wie nie</span>
-        <h2 class="hero_header">
-            <span class="hero-header-top">Deine eigene Website,</span>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-header-top">Ich entwickle moderne Websites,</h1>
+                <p class="hero-header-bot">professionell umgesetzt.</p>
+                <p class="hero_text">Für Selbständige und kleine Unternehmen - schnell und zuverlässig</p>
+                <a class="button-n" href="kontakt.html">Projekt starten</a>
+            </div>
+            <img id="port" src="img/portrait_transparent.png" alt="Hakan Johnson Portrait">
+        </div>
+        
+        <!--<span class="spruch spruch-hell"><img src="img/stern.svg" alt="">Online sichtbar - so einfach wie nie</span>
+        <<h2 class="hero_header">
+            <span class="hero-header-top">Ich entwickle moderne Websites,</span>
             <span class="hero-header-bot">professionell umgesetzt.</span>
         </h2>
         <p class="hero_text">Für Selbständige und kleine Unternehmen - schnell und zuverlässig</p>
         <div class="wrapper_btn">
-        <a href="#pakete" class="button-paket button-n">Pakete ansehen</a>
+        <a class="button-n" href="kontakt.html">Projekt starten</a>
+        -<a href="#pakete" class="button-paket button-n">Pakete ansehen</a>
         <a href="#portfolio.html" class="button-portfolio button-n">Portfolio entdecken</a>
         </div>
-        <a href="#warum"><img class="pfeil" src="img/enable_40dp_592DA0_FILL0_wght400_GRAD0_opsz40.svg" alt="" width="40px"></a>
+        <a href="#warum"><img class="pfeil" src="img/enable_40dp_592DA0_FILL0_wght400_GRAD0_opsz40.svg" alt="" width="40px"></a>-->
     </section>
 
-    <section class="section_header">
+    <!--<section class="section_header">
        <h2>Über Mich</h2> 
        <p>Wer steckt dahinter?</p>
        <div class="wrapper_about">
@@ -48,7 +65,7 @@
         <p class="card_me">Ich bin Hakan und selbständiger Webentwickler aus Münster in Hessen. Ich helfe Klein- und Einzelunternehmen dabei, online sichtbar zu werden. 
         Ich biete Dir die Professionalität einer Agentur – aber mit persönlicher Betreuung, kurzen Entscheidungswegen und fairen Preisen. Deine Website ist bei mir in den besten Händen.</p>
        </div>
-    </section>
+    </section>-->
 
     <section class="light section_header bg-color" id="warum">
         <h2 class="font-white">Warum mit mir arbeiten?</h2>
@@ -94,152 +111,15 @@
             </div>
         </div>
     </section>
-
-    <section id="pakete" class="pakete section_header">
-        <h2>Noch keine Website? Wähle dein perfektes Paket</h2>
-        <p>Von der einfachen Website bis zur komplexen Web-App – ich habe die passende Lösung für dich</p>
-        <div class="card_wrapper">
-            <div class="card">
-                <div class="card_header">
-                    <h3 class="skill_header">Starter (Aktionspreis)</h3>
-                    <h4>Perfekt für deinen ersten Schritt ins Web</h4>
-                </div>
-                <div class="streicher"></div>
-                <p class="price">ab <!--<span style="text-decoration: line-through;">399€</span>--> 349€*</p>
-                <div class="card_content">
-                    <!--<h5>Ideal für:</h5>
-                    <ul>
-                        <li>Einzelunternehmer</li>
-                        <li>einfache Dienstleistungen</li>
-                    </ul>-->
-                    <ul>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">1 Seite (Landing Page)</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">modernes, individuelles Design</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">mobile Optimierung</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">Kontaktformular</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">1 Korrekturschleife</li>
-
-                    </ul>
-                  
-                </div>
-                
-            </div>
-            <div class="card card-extra">
-                <p class="card-special"><img src="img/celebration_24dp_F9DB78_FILL0_wght400_GRAD0_opsz24.svg" alt="">Beliebt</p>
-                <div class="card_header">
-                    <h3 class="skill_header">Business (Aktionspreis)</h3>
-                    <h4>Für Unternehmen, die online durchstarten wollen</h4>
-                </div>
-                <p class="price">ab <!--<span style="text-decoration: line-through;">699€</span>--> 599*</p>
-                <div class="card_content">
-                    <!--<h5>Ideal für:</h5>
-                    <ul>
-                        <li>Kleine Unternehmen</li>
-                        <li>Dienstleister</li>
-                    </ul>-->
-                    <ul>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">bis zu 3 Seiten (z.B. Start, Leistungen, Kontakt)</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">modernes, individuelles Design</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">mobile Optimierung</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">Kontaktformular</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">Basis-SEO</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">1 Korrekturschleife</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card_header">
-                    <h3 class="skill_header">Premium (Aktionspreis)</h3>
-                    <h4>Die komplexe Lösung für anspruchsvolle Projekte</h4>
-                    
-                </div>
-                <p class="price">ab <!--<span style="text-decoration: line-through;">999€</span>--> 849€*</p>
-                <div class="card_content">
-                    <!--<h5>Ideal für:</h5>
-                    <ul>
-                        <li>wachsende Unternehmen</li>
-                        <li>detaillierte Inhalte</li>
-                    </ul>-->
-
-                    <ul>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">ab 5 Seiten</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">modernes, individuelles Design</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">mobile Optimierung</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">Kontaktformular</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">Basis-SEO</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">1 Korrekturschleife</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-   
-    <section class="bg-color">
-        <div class="section_header">
-            <h2 class="font-white">Was passiert danach?</h2>
-            <p class="font-white">Nicht nur bis zur Veröffentlichung - Auch danch bin ich noch für dich da</p>
-        </div>
-    <div class="card_wrapper">
-            <div class="card">
-                <div class="card_header">
-                    <h3 class="skill_header">Service (Abo)</h3>
-                    <h4>Damit du dir keine Sorgen machen musst (Laufzeit immer 6 Monate)</h4>
-                </div>
-                <p class="price">49€ <br>monatlich</p>
-                <div class="card_content">
-                    <!--<h5>Ideal für:</h5>
-                    <ul>
-                        <li>Einzelunternehmer</li>
-                        <li>einfache Dienstleistungen</li>
-                    </ul>-->
-                    <ul>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">kleinere Textanpassungen</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">Bilderaustausch oder neue hinzufügen</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">System Wartung</li>
-                        <li><img src="img/check_circle_24dp_B2A8D3_FILL0_wght400_GRAD0_opsz24.svg" alt="">Persönlicher Ansprechpartner</li>
-                        
-                    </ul>
-                </div>
-            </div>
-            <div>
-            <h5 class="font-white">Für wen sich das lohnt & warum Pflege wichtig ist</h5>
-            
-            <p class="font-white">Dieses Abo eignet sich ideal für Unternehmer, Selbständige und Websitebetreiber, die regelmäßig kleine Änderungen 
-            an Texten und Bildern benötigen - ohne selbst Zeit und Technik dafür aufzuwenden. <br><br>
-            Regelmäßige Pflege und Wartung sorgen dafür, dass deine Inhalte immer aktuell, ansprechend und professionell wirken. 
-            So vermeidest Du veraltete Informationen, Fehler, die potenzielle Kunden abschrecken könnten. 
-            Mit meinem Service erhälst du schnelle Anpassungen, eine konsistene Darstellung und die Sicherheit, dass deine Inhalte
-            jederzeit auf dem neusten Stand sind. 
-                
-            </p>
-        </div>  
-    </div>
-            
-    </section>
-
-     <section>
-        <div class="section_header">
-         <h2>Anderes Anliegen?</h2>
-        <p>Du brauchst mehr Seiten? Zusätzliche Funktionen? Design Upgrade? oder willst deine bestehende Seite überarbeiten lassen?</p>
-        </div>
-        <div class="card_wrapper">
-            <div class="card">
-                <div class="card_header">
-                    <h3 class="skill_header">Individueller Service</h3>
-                </div>
-                <p class="price">Auf Anfrage</p>
-                <a href="kontakt.html" class="button-paket button-n">Jetzt Kontaktieren</a>
-
-           
-                
-            </div>
-    </div>
-            
-    </section>
     
     <footer>
-        <p class="kleinge">*Alle Preise sind Startpreise - keine Server- und Domainkosten oder weitere externe Kosten enthalten – Ich erstelle dir gerne ein individuelles Angebot</p><br>
+        <span>Made with ❤️ in Münster, Hessen</span>
         <span>©2026 Hakan Johnson Webentwicklung <a class="login-button" href="html/login.html">#</a></span>
+        <div>
+            <span><a href="impressum.html">Impressum</a></span> 
+            <span>|</span>
+            <span><a href="datenschutz.html">Datenschutz</a></span>   
+        </div>
     </footer>
 </body>
 </html>

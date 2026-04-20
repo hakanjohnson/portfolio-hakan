@@ -1,11 +1,11 @@
 :root {
     --color-bg-1: #f7f4f4;
     --color-bg-2: #eeedee;
-    --color-accent-1: #5b4d86;
+    --color-accent-1: #07070c;
     --color-accent-2: #2e366b;
     --hover-color: #e1cf49;
     --color-text-header-standard: #151515;
-    --color-text-standard: #363636;
+    --color-text-standard: #000000;
 
 }
 
@@ -29,6 +29,8 @@
 
 main {
     flex: 1;
+    width: 100%;
+    padding-top: 60px;
 }
 
 #port {
@@ -60,13 +62,6 @@ main {
     border: solid 4px var(--color-accent-2);
 }
 
-#port {
-    position: absolute;
-    right: auto;
-    bottom: -180px;
-    filter: drop-shadow(0 0 10px #ffffffe0);
-    width: 300px;
-}
 
 footer {
     background-color: var(--color-accent-1);
@@ -83,15 +78,25 @@ footer {
     padding: 30px;
 }
 
+#port {
+    position: absolute;
+    right: 10px;
+    bottom: -60px;
+    filter: drop-shadow(0 0 10px #ffffffe0);
+    width: 200px;
+    z-index: -2;
+}
 
-@media (min-width: 700px) {
+
+@media (min-width: 620px) {
     #port {
     position: absolute;
     right: 0px;
     bottom: -140px;
     filter: drop-shadow(0 0 10px #ffffffe0);
     width: 500px;
-    }
+    z-index: -2;
+}
 
     footer {
     background-color: var(--color-accent-1);
@@ -143,7 +148,7 @@ p {
 /**Body**/
 
 body {
-    color: rgb(234, 234, 234);
+    color: rgb(230, 230, 230);
     width: 100%;
     height: 100vh;
     background-color: var(--color-bg-1);
@@ -432,16 +437,19 @@ section {
     transform: scale(1.2);
 }
 
+.kleing {
+    color: var(--color-text-standard);
+}
+
 .navbar {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    position: fixed;
+    z-index: 99999;
     background-color: rgba(255, 255, 255, 0.781);
     backdrop-filter: blur(20px);
-    z-index: 9999;
     height: 60px;
     padding: 0 20px;
 }   
@@ -453,12 +461,11 @@ section {
 .hero {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 60px);
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(90deg, #7e5dc5, #ebebeb);
+    background-image: linear-gradient(to right, #161723, #3e1077);
     background-attachment: fixed;
-    padding-top: 100px;
     overflow: hidden;
     z-index: 1;
 
@@ -508,22 +515,18 @@ header, .nav-container {
     background-color: white;
     border: 1px solid #ddd;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-
-    /* --- DER WICHTIGE TEIL --- */
-    position: absolute;  /* Schwebt über dem Content */
-    top: 60px;           /* Abstand zum oberen Rand (an dein Icon anpassen) */
-    right: 0;             /* Oder right: 0; je nach Design */
-    z-index: 1000;       /* Sorgt dafür, dass es ÜBER allem anderen liegt */
-    width: 200px;        /* Feste Breite, damit es nicht die ganze Zeile füllt */
+    position: absolute;  
+    top: 60px;         
+    right: 0;             
+    z-index: 1000;     
+    width: 200px;       
 }
 
-/* Einblenden bei Klick */
 #menu-toggle:checked ~ .nav-links {
     opacity: 1;
     visibility: visible;
 }
 
-/* Verhindert das Verschieben der Menüpunkte selbst */
 .nav-links li {
     display: block;
     padding: 8px 12px;
@@ -537,10 +540,19 @@ header, .nav-container {
     color: var(--hover-color);
 }
 
-.button-n {
+.btn-light {
     border-radius: 12px;
     background-color: var(--color-bg-1);
     color: var(--color-text-standard);
+    padding: 10px 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.btn-dark {
+    border-radius: 12px;
+    background-color: var(--color-accent-1);
+    color: var(--color-bg-1);
     padding: 10px 20px;
     margin-top: 20px;
     display: inline-block;
@@ -558,7 +570,6 @@ header, .nav-container {
     border: solid 2px var(--color-bg-1);
 }
 
-/** Kontaktformular**/
 
 .kontakt {
     margin-top: 100px;
@@ -645,21 +656,6 @@ input[type="submit"]:hover {
     transition: all 0.3s ease;
 }
 
-.impressum h2 {
-    width: 100%;
-}
-
-.impressum p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    margin: 0 auto;
-    max-width: 600px;
-}
-
-.impressum {
-    margin-top: 100px;
-    padding: 10px;
-}
 
 .footer_container {
     display: flex;

@@ -15,7 +15,6 @@ p {
     font-size: 1.2rem;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 600px;
     color: var(--color-text-standard);
 }
 
@@ -32,7 +31,7 @@ p {
 }
 
 .hero-header-bot {
-    background: linear-gradient(90deg, var(--color-accent-1), var(--color-accent-2));
+    background: linear-gradient(90deg, #5b6fb0, #7a3c9b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -92,6 +91,10 @@ ul li {
 
 }
 
+.impressum {
+    padding: 16px;
+}
+
 @media (min-width: 768px) {
     h1 {
     font-size: 1rem;
@@ -104,7 +107,6 @@ p {
     font-size: 1.2rem;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 600px;
 }
 
 h2 {

@@ -1,0 +1,17 @@
+:root {
+    --color-bg-1: #f7f4f4;
+    --color-bg-2: #eeedee;
+    --color-accent-1: #07070c;
+    --color-accent-2: #2e366b;
+    --hover-color: #e1cf49;
+    --color-text-header-standard: #151515;
+    --color-text-standard: #000000;
+}
+
+@font-face {
+    font-family: 'Space';
+    src: url(/fonts/SpaceGrotesk-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+

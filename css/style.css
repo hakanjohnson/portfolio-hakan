@@ -41,15 +41,6 @@ main {
     font-size: 1.5rem;
 }
 
-#port {
-    position: absolute;
-    right: 0px;
-    bottom: -140px;
-    filter: drop-shadow(0 0 10px #ffffffe0);
-    width: 500px;
-    z-index: -2;
-}
-
 
 .wrapper_about {
     margin-top: 20px;
@@ -89,20 +80,24 @@ footer {
 #port {
     position: absolute;
     right: 10px;
-    bottom: -60px;
+    bottom: -35px;
     filter: drop-shadow(0 0 10px #ffffffe0);
     width: 200px;
     z-index: -2;
+}
+
+.short {
+    max-width: 70%;
 }
 
 
 @media (min-width: 620px) {
     #port {
     position: absolute;
-    right: 0px;
-    bottom: -140px;
+    right: 50px;
+    bottom: -50px;
     filter: drop-shadow(0 0 10px #ffffffe0);
-    width: 500px;
+    width: 300px;
     z-index: -2;
 }
 

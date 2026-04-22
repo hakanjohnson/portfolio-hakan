@@ -428,6 +428,7 @@ section {
 .nav-links li a {
     text-decoration: none;
     color: #333;
+    display: block;
 }
 
 /* Cursor-Pointer für das Icon, damit man sieht, dass es klickbar ist */

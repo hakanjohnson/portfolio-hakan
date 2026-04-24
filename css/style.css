@@ -463,7 +463,7 @@ section {
 
 
 .navbar {
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -482,7 +482,7 @@ section {
 .hero {
     position: relative;
     width: 100%;
-    min-height: calc(100vh - 60px);
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     background-image: linear-gradient(to right, #161723, #3e1077);

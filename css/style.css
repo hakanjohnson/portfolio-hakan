@@ -436,7 +436,7 @@ section {
 }
 
 
-.navbar {
+/*.navbar {
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -447,7 +447,7 @@ section {
     backdrop-filter: blur(20px);
     height: 60px;
     padding: 0 20px;
-}   
+}   */
 
 .nav-links {
     display: none;
@@ -661,6 +661,123 @@ input[type="submit"]:hover {
 
 .login-button {
     color:#af26bc00;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff9d;
+    position: relative;
+    padding: 4px 20px;
+}
+
+#menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, background-color 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
+    position: absolute;
+    top: 70px;
+    left: -250px;
+    width: 0%;
+    height: min-content;
+    z-index: 9999;
+}
+
+#menu.open {
+    min-height: fit-content;
+    background-color: #ffffffef;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    z-index: 9999;
+}
+
+#menu-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    transition: rotate 2.4s ease;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.burger {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.burger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    margin: 6px 0;
+    transition: all 0.5s ease;
+    position: relative;
+
+}
+
+.burger.active {
+    transform: rotate(90deg);
+}
+
+/* X-Form */
+
+.burger.active span:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: translateY(-15px) rotate(-45deg);
+}
+
+#menu li {
+    padding: 10px;
+    color: rgb(9, 9, 9);
+    font-size: 16px;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    border-bottom: 1px solid #0000003f;
+    border-width: 80%;  
+}
+
+.submenu {
+    position: relative;
+    left: 20px;
+    display: none;
+    transition: all 2.5s ease-in-out;
+}
+
+.submenu.active {
+    display: block;
+    transition: all 2.5s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+    color: #000000ef;
 }
 
 

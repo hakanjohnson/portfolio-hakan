@@ -9,6 +9,12 @@
 
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: 'Space';
     src: url(/fonts/SpaceGrotesk-Regular.ttf) format('truetype');
@@ -436,7 +442,7 @@ section {
 }
 
 
-/*.navbar {
+.navbar {
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -447,7 +453,7 @@ section {
     backdrop-filter: blur(20px);
     height: 60px;
     padding: 0 20px;
-}   */
+}   
 
 .nav-links {
     display: none;
@@ -456,7 +462,7 @@ section {
 .hero {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     background-size: cover;
     background-position: center;
     background-image: linear-gradient(to right, #161723, #3e1077);
@@ -469,12 +475,13 @@ section {
 
 .hero_header {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    width: 500px;
+    flex-wrap: wrap;
+    justify-content: center;
     font-size: 3rem;
     font-weight: bold;
     color: var(--primary-color);
-    justify-content: left;
+    padding-bottom: 25px;
 }
 
 .hero_name {
@@ -486,7 +493,7 @@ section {
 .hero_text {
     max-width: 600px;
     color: #e5e4e4;
-    margin: 0;
+    margin: 0 0 60px 0;
 }
 
 .light {
@@ -540,7 +547,6 @@ header, .nav-container {
     background-color: var(--color-bg-1);
     color: var(--color-text-standard);
     padding: 10px 20px;
-    margin-top: 20px;
     display: inline-block;
 }
 
@@ -549,7 +555,6 @@ header, .nav-container {
     background-color: var(--color-accent-1);
     color: var(--color-bg-1);
     padding: 10px 20px;
-    margin-top: 20px;
     display: inline-block;
 }
 
@@ -664,6 +669,7 @@ input[type="submit"]:hover {
 }
 
 .navbar {
+    height: 100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -687,12 +693,12 @@ input[type="submit"]:hover {
 
 #menu.open {
     min-height: fit-content;
-    background-color: #ffffffef;
+    background-color: #fafafa;
     width: 100%;
     height: 100vh;
     position: absolute;
     left: 0;
-    top: 70px;
+    top: 72px;
     z-index: 9999;
 }
 
@@ -773,11 +779,10 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
-    transition: all 0.5s ease-in-out;
 }
 
-a:hover {
-    color: #000000ef;
+ul>li>a:hover {
+    color: #6b40c8ef;
 }
 
 

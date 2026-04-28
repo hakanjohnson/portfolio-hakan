@@ -1,8 +1,8 @@
 :root {
     --color-bg-1: #f7f4f4;
     --color-bg-2: #eeedee;
-    --color-accent-1: #07070c;
-    --color-accent-2: #2e366b;
+    --color-accent-1: #000000;
+    --color-accent-2: #000000;
     --hover-color: #e1cf49;
     --color-text-header-standard: #151515;
     --color-text-standard: #000000;
@@ -291,19 +291,22 @@ section {
 }
 
 .card_bubble_yellow {
-    background-color: #ef9292;;
+    background-color: #211650;
+    color: #ffffff;
 }
 
 .card_bubble_purple {
-    background-color: #8fb4eb;;
+    background-color: #451a5c;
+    color: #ffffff;
 }
 
 .card_bubble_blue {
-    background-color: #c0e081;;
+    background-color: #794e9e;
+    color: #ffffff;
 }
 
 .bg-color {
-    background: linear-gradient(45deg, var(--color-accent-1), var(--color-accent-2));
+    background: linear-gradient(to right, #161723, #3e1077);
 }
 
 .font-white {

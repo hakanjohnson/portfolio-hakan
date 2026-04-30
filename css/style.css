@@ -113,6 +113,8 @@ footer {
 
 #warum {
     position: relative;
+    background-image: url("/img/beratung.jpg");
+    background-size: cover;
 }
 
 * {
@@ -446,7 +448,6 @@ section {
 
 
 .navbar {
-    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -478,9 +479,10 @@ section {
 
 .hero_header {
     display: flex;
-    width: 500px;
+    max-width: 500px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     font-size: 3rem;
     font-weight: bold;
     color: var(--primary-color);
@@ -677,8 +679,7 @@ input[type="submit"]:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff9d;
-    position: relative;
+    background-color: #ffffffef;
     padding: 4px 20px;
 }
 

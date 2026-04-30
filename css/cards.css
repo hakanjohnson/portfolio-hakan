@@ -1,6 +1,6 @@
 h1 {
     color: var(--color-accent-1);
-    font-size: 1rem;
+    font-size: 0.4rem;
     font-weight: bold;
     margin: 0 auto;
 
@@ -22,7 +22,7 @@ p {
     font-size: 2.5rem;
     font-weight: bolder;
     margin: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .hero-header-top {
@@ -129,5 +129,12 @@ h5 {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
+}
+.hero-header-top, .hero-header-bot {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 0;
+    text-align: center;
 }
 }

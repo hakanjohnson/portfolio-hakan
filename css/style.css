@@ -681,26 +681,28 @@ input[type="submit"]:hover {
     padding: 4px 20px;
 }
 
+
 #menu {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out, background-color 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
+    height: 100vh;
+    background-color: #18064cf2;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    width: 100vw;
     position: absolute;
-    top: 70px;
-    left: -250px;
-    width: 0%;
-    height: min-content;
+    right: 0;
+    top: 85px;
     z-index: 9999;
 }
 
 #menu.open {
-    min-height: fit-content;
-    background-color: #fafafa;
-    width: 100%;
     height: 100vh;
+    background-color: #18064cf2;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    width: 100vw;
     position: absolute;
-    left: 0;
-    top: 72px;
+    right: 0;
+    top: 85px;
     z-index: 9999;
 }
 
@@ -710,6 +712,7 @@ input[type="submit"]:hover {
     font-size: 40px;
     cursor: pointer;
     transition: rotate 2.4s ease;
+    z-index: 1000;
 
 }
 
@@ -718,20 +721,20 @@ ul {
     padding: 0;
     margin: 0;
     text-decoration: none;
-    transition: all 0.5s ease;
 }
 
 .burger {
     width: 40px;
     height: 40px;
     position: relative;
+    z-index: 99999;
 }
 
 .burger span {
     display: block;
     width: 100%;
     height: 4px;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     margin: 6px 0;
     transition: all 0.5s ease;
     position: relative;
@@ -756,14 +759,21 @@ ul {
     transform: translateY(-15px) rotate(-45deg);
 }
 
+#menu ul {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 #menu li {
     padding: 10px;
-    color: rgb(9, 9, 9);
+    color: #ffffff;
     font-size: 16px;
     transition: all 0.5s ease-in-out;
     text-decoration: none;
-    border-bottom: 1px solid #0000003f;
-    border-width: 80%;  
+    border-bottom: 2px solid #ffffff70;
+    width: 200px;
+    margin: 0 auto;
 }
 
 .submenu {
@@ -784,8 +794,22 @@ a {
 }
 
 ul>li>a:hover {
-    color: #6b40c8ef;
+    color: #7126a0;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
 
 
 @media (min-width: 620px) {

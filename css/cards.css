@@ -55,10 +55,7 @@ h5 {
     list-style-type: circle;
 }
 
-ul li {
-    display: flex;
-    gap: 5px
-}
+
 
 .card_content {
     display: flex;

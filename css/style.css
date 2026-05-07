@@ -678,7 +678,7 @@ input[type="submit"]:hover {
     position: absolute;
     width: 200px;
     height: 200px;
-    background-color: #9bf46b;
+    background-color: #27207a;
     border-radius: 50%;
     top: 200px;
     left: 50px;
@@ -692,7 +692,7 @@ input[type="submit"]:hover {
     position: absolute;
     width: 200px;
     height: 200px;
-    background-color: #ad67d5;
+    background-color: #3c1b4f;
     border-radius: 50%;
     top: 300px;
     right: 20px;
@@ -706,7 +706,7 @@ input[type="submit"]:hover {
     position: absolute;
     width: 200px;
     height: 200px;
-    background-color: #f0465a;
+    background-color: #6c28a8;
     border-radius: 50%;
     top: 350px;
     right: 80px;
@@ -835,7 +835,7 @@ ul {
 }
 
 #menu li {
-    padding: 10px;
+
     color: #ffffff;
     font-size: 24px;
     transition: all 0.5s ease-in-out;

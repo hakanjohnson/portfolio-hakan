@@ -1,94 +1,103 @@
 <!doctype html>
 <html lang="de">
   <head>
-    <script
-      id="Cookiebot"
-      src="https://consent.cookiebot.com/uc.js"
-      data-cbid="b679f538-e021-462c-adcf-fb2af9f20bed"
-      data-blockingmode="auto"
-      type="text/javascript"
-    ></script>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hakanjohnson.de - Startseite</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/cards.css" />
     <meta
       name="description"
-      content="Hakan Johnson - Professionelle Webentwicklung für Selbständige und kleine Unternehmen. Individuelle Websites, modernes Design, zuverlässiger Service."
-    />
-    <meta
-      name="keywords"
-      content="Webentwicklung, Webdesign, Selbständige, kleine Unternehmen, professionelle Websites, individuelle Lösungen, responsive Design, SEO, Support"
-    />
-    <meta name="author" content="Hakan Johnson" />
-    <meta property="og:title" content="Hakan Johnson.de - Webentwicklung" />
-    <meta
-      property="og:description"
-      content="Hakan Johnson - Professionelle Webentwicklung für Selbständige und kleine Unternehmen. Individuelle Websites, modernes Design, zuverlässiger Service."
-    />
-    <meta property="og:image" content="img/IMG_8106.jpg" />
-    <meta property="og:url" content="https://www.hakanjohnson.de" />
+      content="Hakan Johnson – moderne Webentwicklung für Websites, Web-Apps und digitale Lösungen." />
+    <title>Hakan Johnson — Webentwicklung</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="navbar">
-      <div class="logo">
-        <a href="index.html"
-          ><img
-            id="logo"
-            src="img/logo_transparent2.png"
-            alt="Hakan Johnson Logo"
-            width="200px"
-        /></a>
-      </div>
-      <button id="menu-btn" class="burger" href="#">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-    <nav id="menu" class="menu">
-      <ul>
-        <li id="menu1"><a href="index.html">Startseite</a></li>
-        <li id="menu2"><a href="pakete.html">Preise</a></li>
-        <li id="menu3"><a href="service.html">Service</a></li>
-        <li id="menu4"><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section class="hero">
-        <!--<div class="kugel1"></div>
-        <div class="kugel2"></div>
-        <div class="kugel3"></div>-->
-        <span class="spruch spruch-hell"
-          ><img src="img/stern.svg" alt="" />Online sichtbar - so einfach wie
-          nie</span
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Hakan Johnson Startseite">
+        <span
+          >Hakan Johnson - Webentwicklung<span class="brand-dot">.</span></span
         >
-        <h2 class="hero_header">
-          <span class="hero-header-top">moderne Websites,</span>
-          <span class="hero-header-bot">professionell umgesetzt.</span>
-        </h2>
-        <p class="hero_text">
-          Für Selbständige und kleine Unternehmen - schnell und zuverlässig
-        </p>
-        <div class="wrapper_btn">
-          <a class="btn-light" href="kontakt.html">Projekt starten</a>
-          <a href="pakete.html" class="btn-dark">Pakete ansehen</a>
+      </a>
+
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#produkte">Produkte</a>
+        <a href="#projekte">Projekte</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+
+      <a class="header-cta" href="kontakt.html"
+        >Projekt starten <span>↗</span></a
+      >
+      <button
+        class="menu-toggle"
+        aria-label="Menü öffnen"
+        aria-expanded="false">
+        ☰
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">
+            <span class="status-dot"></span> Selbstständiger · Webentwickler
+          </p>
+          <h1>Websites, die<br /><em>mehr können.</em></h1>
+          <p class="hero-text">
+            Moderne, schnelle und durchdachte Weblösungen für Unternehmen,
+            Selbstständige und eigene digitale Produkte.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#kontakt"
+              >Projekt besprechen <span>→</span></a
+            >
+            <a class="text-link" href="#projekte"
+              >Arbeiten ansehen <span>↓</span></a
+            >
+          </div>
+          <div class="hero-meta">
+            <div><strong>HTML · CSS · JS</strong><span>Frontend</span></div>
+            <div><strong>React · Node.js</strong><span>Web Apps</span></div>
+            <div>
+              <strong>weitere Tools · KI · Figma · Relume · Canva </strong
+              ><span>Unterstützend für Design und Umsetzung</span>
+            </div>
+          </div>
         </div>
-        <a href="#about"
-          ><img
-            class="pfeil"
-            src="img/keyboard_double_arrow_down_40dp_FFFFFF_FILL0_wght400_GRAD0_opsz40.svg"
-            alt=""
-            width="60px"
-        /></a>
+
+        <div class="hero-visual reveal">
+          <div class="visual-card main-card">
+            <div class="window-top">
+              <i></i><i></i><i></i><span>web_project.js</span>
+            </div>
+            <div class="code-lines" aria-hidden="true">
+              <span><b>01</b> <strong>const</strong> project = {</span>
+              <span><b>02</b> &nbsp;&nbsp;design: <mark>"clean"</mark>,</span>
+              <span><b>03</b> &nbsp;&nbsp;speed: <mark>"fast"</mark>,</span>
+              <span><b>04</b> &nbsp;&nbsp;ideas: <mark>true</mark>,</span>
+              <span><b>05</b> };</span>
+              <span class="cursor"><b>06</b> </span>
+            </div>
+          </div>
+          <div class="floating-card">
+            <span class="mini-label">BUILD · DESIGN · LAUNCH</span>
+            <strong>Digitale Ideen.<br />Sauber umgesetzt.</strong>
+          </div>
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+        </div>
       </section>
 
-      <section id="about" class="section_header">
-        <h2>Über Mich</h2>
-        <p>Wer steckt dahinter?</p>
-        <div class="wrapper_about">
-          <img id="profilbild" src="img/image (4).png" alt="" />
-          <p class="card_me">
+      <section class="intro section reveal">
+        <div class="section-number">01 /</div>
+        <div>
+          <p class="eyebrow">Wer bin ich und was ich mache</p>
+          <h2>Digital statt kompliziert.</h2>
+          <p class="large-copy">
             Ich bin Hakan und selbständiger Webentwickler aus Münster in Hessen.
             Ich helfe Klein- und Einzelunternehmen dabei, online sichtbar zu
             werden. Ich biete Ihnen die Professionalität einer Agentur –
@@ -99,102 +108,135 @@
         </div>
       </section>
 
-      <section class="light section_header lighter" id="warum">
-        <h2>Warum mit mir arbeiten?</h2>
-        <p>Qualität und Leidenschaft in jedem Projekt</p>
+      <section id="leistungen" class="services section">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Leistungen</p>
+            <h2>Von der Idee bis zum<br /><em>fertigen Produkt.</em></h2>
+          </div>
+          <p>
+            Kein Baukasten-Look. Keine unnötige Komplexität. Stattdessen
+            Lösungen, die zum Projekt passen.
+          </p>
+        </div>
 
-        <div class="card_wrapper">
-          <div class="poly"></div>
-          <div class="card">
-            <img
-              src="img/verified_user_50dp_756DC1_FILL0_wght400_GRAD0_opsz48.png"
-              alt=""
-              width="40px"
-            />
-            <h3 class="skill_header">Professionelle Qualität</h3>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span>01</span>
+            <h3>Websites</h3>
+            <p>
+              Moderne Unternehmensseiten, Landingpages und individuelle
+              Webauftritte – responsive und performant.
+            </p>
+            <a href="#kontakt">Mehr erfahren →</a>
+          </article>
+          <article class="service-card featured reveal">
+            <span>02</span>
+            <h3>Professionelle Qualität</h3>
             <p>
               Ich liefere hochwertige Websites, die nicht nur gut aussehen,
               sondern auch technisch einwandfrei funktionieren.
             </p>
-          </div>
-          <div class="card">
-            <img
-              src="img/crown_50dp_756DC1_FILL0_wght400_GRAD0_opsz48.png"
-              alt=""
-              width="40px"
-            />
-            <h3 class="skill_header">Individuelle Lösungen</h3>
+            <a href="#kontakt">Mehr erfahren →</a>
+          </article>
+          <article class="service-card reveal">
+            <span>03</span>
+            <h3>Individuelle Lösungen</h3>
             <p>
               Jedes Projekt ist einzigartig. Ich passe meine Dienstleistungen
               genau an deine Bedürfnisse und Ziele an.
             </p>
-          </div>
-          <div class="card">
-            <img
-              src="img/help_50dp_756DC1_FILL0_wght400_GRAD0_opsz48.png"
-              alt=""
-              width="40px"
-            />
-            <h3 class="skill_header">Engagierter Support</h3>
+            <a href="#kontakt">Mehr erfahren →</a>
+          </article>
+          <article class="service-card reveal">
+            <span>04</span>
+            <h3>Engagierter Support</h3>
             <p>
               Ich stehe dir zur Seite, um Fragen zu beantworten und
               sicherzustellen, dass du mit dem Ergebnis zufrieden bist.
             </p>
-          </div>
+            <a href="#kontakt">Mehr erfahren →</a>
+          </article>
         </div>
       </section>
 
-      <section>
-        <div class="polyrechts"></div>
-        <h2 class="hell">Der Ablauf</h2>
-        <p class="hell">So bauen wir deine Website gemeinsam auf</p>
-        <div class="card_wrapper">
-          <div class="card">
-            <div class="card_bubble_yellow">1</div>
-            <h3 class="skill_header">Beratung & Planung</h3>
+      <section id="produkte" class="products section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Eigene Produkte</p>
+            <h2>Digitale Lösungen,<br /><em>die ich selbst entwickle.</em></h2>
+          </div>
+          <p>
+            Neben Kundenprojekten entstehen eigene kleine Tools, Systeme und
+            Produkte, die reale Probleme lösen.
+          </p>
+        </div>
+        <div class="product-card">
+          <div class="product-number">P / 01</div>
+          <div>
+            <p class="eyebrow">In Entwicklung</p>
+            <h3>Terminbuchung</h3>
             <p>
-              In einem persönlichen Gespräch klären wir deine Ziele, Wünsche und
-              Anforderungen. Gemeinsam entwickeln wir ein Konzept für deine
-              Website.
+              Für Selbstständige, die ihre Termine online verwalten und
+              Buchungen direkt auf ihrer Website anbieten möchten. Keine
+              Abhängigkeit von Drittanbietern, volle Kontrolle über die Daten
+              und ein nahtloses Erlebnis für die Kunden.
             </p>
           </div>
-          <div class="card">
-            <div class="card_bubble_purple">2</div>
-            <h3 class="skill_header">Design & Entwicklung</h3>
-            <p>
-              Ich erstelle ein individuelles Design, das zu deiner Marke passt,
-              und entwickle die Website mit modernster Technologie.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card_bubble_blue">3</div>
-            <h3 class="skill_header">Veröffentlichung & Support</h3>
-            <p>
-              Nach der Fertigstellung veröffentliche ich deine Website und stehe
-              dir auch danach mit Rat und Tat zur Seite.
-            </p>
-          </div>
+          <span class="product-arrow">↗</span>
         </div>
       </section>
 
-      <section class="lighter">
-        <h2 class="">Bereit für deine eigene Website?</h2>
-        <p>Kontaktiere mich jetzt und starten dein Projekt</p>
-        <br />
-        <a class="btn-dark" href="kontakt.html">Jetzt starten</a>
+      <section id="projekte" class="projects section reveal">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Ausgewählte Projekte</p>
+            <h2>Gemacht für<br /><em>echte Anforderungen.</em></h2>
+          </div>
+        </div>
+        <div class="project-grid">
+          <article class="project project-dark">
+            <span>01 / WEBSITE</span>
+            <h3>Shanna's<br />Holzpoesie</h3>
+            <p>
+              Individueller Webauftritt mit Galerie, Workshopanmeldung und guter
+              Übersicht über die angebotenen Produkte und Dienstleistungen.
+            </p>
+            <a href="shannas-holzpesie.de">Projekt ansehen →</a>
+          </article>
+          <article class="project project-light">
+            <span>02 / WEBSITE</span>
+            <h3>Motorradtechnik<br />Mosel</h3>
+            <p>
+              Profesioneller Webauftritt mit Galerie, Kontaktmöglichkeiten und
+              guter Übersicht über die angebotenen Produkte und
+              Dienstleistungen.
+            </p>
+            <a href="kontakt.html">Projekt anfragen →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="kontakt" class="contact section reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Eine Idee im Kopf?<br /><em>Lass sie uns bauen.</em></h2>
+        <p>
+          Du hast ein Projekt, eine Website oder ein digitales Produkt im Kopf?
+          Schreib mir kurz, worum es geht.
+        </p>
+        <a class="button button-primary" href="mailto:info@hakanjohnson.de"
+          >Kontakt aufnehmen <span>↗</span></a
+        >
       </section>
     </main>
+
     <footer>
-      <span
-        >©2026 Hakan Johnson Webentwicklung
-        <a class="login-button" href="html/login.html">#</a></span
-      >
-      <div class="inline">
-        <a href="impressum.html">Impressum</a>
-        <!--<span>|</span>
-            <a href="datenschutz.html">Datenschutz</a>  -->
+      <span>© 2026 Hakan Johnson – Webentwicklung</span>
+      <div>
+        <a href="impressum.html">Impressum</a><a href="#">Datenschutz</a>
       </div>
     </footer>
-    <script src="js/nav.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>

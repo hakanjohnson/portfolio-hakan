@@ -1,57 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="b679f538-e021-462c-adcf-fb2af9f20bed" data-blockingmode="auto" type="text/javascript"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hakanjohnson.de - Kontakt</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cards.css">
-</head>
-<body>
-    <div class="page">
-    <div class="navbar">
-        <div class="logo">
-            <a href="index.html"><img id="logo" src="img/logo_transparent2.png" alt="Hakan Johnson Logo" width="200px"></a>
-        </div>
-        <button id="menu-btn" class="burger" href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-    <nav id="menu" class="menu">
-        <ul>
-            <li id="menu1" ><a href="index.html">Startseite</a></li>
-            <li id="menu2" ><a href="pakete.html">Pakete</a></li>
-            <li id="menu4" ><a href="service.html">Service</a></li>
-            <li id="menu5" ><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
-    <main>
-    <section class="kontakt">
-        <h2>Kontaktiere Mich</h2>
-        <!--<form class="formular"> 
-            <input type="text" placeholder="Vorname">
-            <input type="text" placeholder="Nachname">
-            <input type="email" placeholder="E-Mail">
-            <textarea placeholder="Nachricht" rows="4"></textarea>
-            <input type="submit" value="Nachricht senden">
-        </form>-->
-        <div class="contact_info"><br>
-            <p><strong>Telefon oder Whatsapp:</strong> <a class="contact color" href="tel:+4917644266356">+49 176 44266356</a> </p><br>
-            <p><strong>E-Mail:</strong> <a class="contact color" href="mailto:info@hakanjohnson.de">info@hakanjohnson.de</a></p>
-    </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kontakt zu Hakan Johnson – Webentwicklung." />
+    <title>Kontakt — Hakan Johnson</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .contact-page{max-width:1150px;margin:0 auto;padding:75px 8vw 120px}
+      .contact-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:90px;align-items:start}
+      .contact-page h1{font-size:clamp(52px,7vw,90px);line-height:.93;letter-spacing:-.07em;margin:0 0 25px}
+      .contact-page h1 em{font-style:normal;color:#8d9d61}
+      .contact-intro{color:#777770;max-width:430px;font-size:16px}
+      .contact-info{margin-top:55px;border-top:1px solid #d7d7d1}
+      .contact-info div{padding:18px 0;border-bottom:1px solid #d7d7d1}
+      .contact-info span{display:block;color:#8a8a83;font-size:10px;text-transform:uppercase;letter-spacing:.12em;margin-bottom:4px}
+      .contact-info a{color:#171717;text-decoration:none;font-size:14px}
+      .form-card{background:#fff;border:1px solid #dddcd5;padding:38px;box-shadow:0 20px 60px #1717170b}
+      .form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+      .field{margin-bottom:20px}
+      label{display:block;font-size:11px;font-weight:600;margin-bottom:8px}
+      input,textarea,select{width:100%;border:1px solid #d5d5ce;background:#f8f8f5;border-radius:6px;padding:14px;font:inherit;font-size:14px;color:#171717;outline:none;transition:.2s}
+      input:focus,textarea:focus,select:focus{border-color:#8d9d61;box-shadow:0 0 0 3px #8d9d611c}
+      textarea{min-height:150px;resize:vertical}
+      .checkbox{display:flex;align-items:flex-start;gap:10px;margin:5px 0 25px;color:#777770;font-size:11px}
+      .checkbox input{width:auto;margin-top:2px}
+      .checkbox a{color:#555}
+      .form-status{display:none;padding:12px 14px;margin-bottom:18px;background:#edf1e4;border-left:3px solid #8d9d61;font-size:13px}
+      .form-status.show{display:block}
+      .button{border:0;cursor:pointer}
+      @media(max-width:850px){.contact-layout{grid-template-columns:1fr;gap:55px}.form-row{grid-template-columns:1fr}.contact-page{padding-top:55px}.form-card{padding:25px}}
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span>Hakan Johnson<span class="brand-dot">.</span></span>
+      </a>
+      <a class="header-cta" href="index.html#leistungen"
+        >Leistungen <span>↗</span></a
+      >
+    </header>
+
+    <main class="contact-page">
+      <a
+        class="back"
+        href="index.html"
+        style="display:inline-flex;color:#555;text-decoration:none;font-size:13px;margin-bottom:45px"
+        >← Zur Startseite</a
+      >
+
+      <div class="contact-layout">
+        <section>
+          <p class="eyebrow">Kontakt</p>
+          <h1>Lass uns etwas<br /><em>bauen.</em></h1>
+          <p class="contact-intro">
+            Du hast eine Idee, brauchst eine neue Website oder möchtest einen
+            bestehenden digitalen Auftritt weiterentwickeln? Erzähl mir kurz
+            davon.
+          </p>
+
+          <div class="contact-info">
+            <div>
+              <span>E-Mail</span>
+              <a href="mailto:info@hakanjohnson.de">info@hakanjohnson.de</a>
+            </div>
+            <div>
+              <span>Antwortzeit</span>
+              <a href="#">In der Regel innerhalb von 1–2 Werktagen</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-card">
+          <form id="contactForm" action="#" method="post">
+            <div class="form-status" id="formStatus" role="status">
+              Danke! Deine Nachricht wurde erfolgreich versendet. Eine
+              Bestätigungsmail wurde an deine E-Mail-Adresse gesendet.
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Name *</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required />
+              </div>
+              <div class="field">
+                <label for="email">E-Mail *</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="company">Unternehmen (optional)</label>
+              <input
+                id="company"
+                name="company"
+                type="text"
+                autocomplete="organization" />
+            </div>
+
+            <div class="field">
+              <label for="service">Worum geht es?</label>
+              <select id="service" name="service">
+                <option value="">Bitte auswählen</option>
+                <option>Neue Website</option>
+                <option>Web-App</option>
+                <option>Mobile App</option>
+                <option>Website überarbeiten</option>
+                <option>Individuelle Anfrage</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Nachricht *</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Erzähl mir kurz von deinem Projekt …"
+                required></textarea>
+            </div>
+
+            <label class="checkbox">
+              <input type="checkbox" required />
+              <span
+                >Ich habe die Hinweise zum Datenschutz gelesen und stimme der
+                Verarbeitung meiner Angaben zur Bearbeitung meiner Anfrage
+                zu.</span
+              >
+            </label>
+
+            <button class="button button-primary" type="submit">
+              Nachricht senden <span>↗</span>
+            </button>
+          </form>
+        </section>
+      </div>
     </main>
+
     <footer>
-        <span>©2026 Hakan Johnson Webentwicklung <a class="login-button" href="html/login.html">#</a></span>
-        <div class="inline">
-            <a href="impressum.html">Impressum</a> 
-            <!--<span>|</span>
-            <a href="datenschutz.html">Datenschutz</a>  -->
-        </div>
+      <span>© 2026 Hakan Johnson – Webentwicklung</span>
+      <div>
+        <a href="impressum.html">Impressum</a><a href="#">Datenschutz</a>
+      </div>
     </footer>
-</div>
-<script src="js/nav.js"></script>
-</body>
+
+    <script src="kontakt.js"></script>
+  </body>
 </html>

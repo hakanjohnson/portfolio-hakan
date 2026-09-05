@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Leistungen & Preise | Hakan Johnson – Webentwicklung</title>
+
+    <meta
+      name="description"
+      content="Professionelle Webentwicklung und individuelle Websites. Transparente Leistungen und faire Preise." />
+
+    <!-- Deine bestehende CSS-Datei -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .pricing-section {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 100px 20px 80px;
+      }
+
+
+      .pricing-header {
+          text-align: center;
+          max-width: 700px;
+          margin: 0 auto 60px;
+      }
+
+
+      .pricing-header .eyebrow {
+          display: inline-block;
+          margin-bottom: 15px;
+          font-size: 0.85rem;
+          font-weight: 600;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          opacity: 0.7;
+      }
+
+
+      .pricing-header h1 {
+          margin: 0 0 20px;
+          font-size: clamp(2.2rem, 5vw, 4rem);
+          line-height: 1.1;
+      }
+
+
+      .pricing-header p {
+          margin: 0;
+          font-size: 1.05rem;
+          line-height: 1.7;
+          opacity: 0.75;
+      }
+
+
+      .pricing-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 25px;
+          align-items: stretch;
+      }
+
+
+      .pricing-card {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          padding: 35px;
+          border: 1px solid rgba(128, 128, 128, 0.25);
+          border-radius: 22px;
+          background: rgba(128, 128, 128, 0.05);
+          transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+
+
+      .pricing-card:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+      }
+
+
+      .pricing-card.featured {
+          border: 2px solid currentColor;
+          transform: translateY(-8px);
+      }
+
+
+      .pricing-card.featured:hover {
+          transform: translateY(-14px);
+      }
+
+
+      .popular-badge {
+          position: absolute;
+          top: -14px;
+          left: 50%;
+          transform: translateX(-50%);
+          padding: 7px 16px;
+          border-radius: 50px;
+          background: currentColor;
+          color: white;
+          font-size: 0.75rem;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+          white-space: nowrap;
+      }
+
+
+      .pricing-card h2 {
+          margin: 0 0 12px;
+          font-size: 1.5rem;
+      }
+
+
+      .pricing-card .description {
+          min-height: 75px;
+          margin: 0 0 25px;
+          line-height: 1.6;
+          opacity: 0.7;
+      }
+
+
+      .price {
+          margin-bottom: 30px;
+      }
+
+
+      .price .from {
+          display: block;
+          margin-bottom: 3px;
+          font-size: 0.8rem;
+          opacity: 0.6;
+      }
+
+
+      .price .amount {
+          font-size: 2.6rem;
+          font-weight: 700;
+          line-height: 1;
+      }
+
+
+      .price .unit {
+          font-size: 0.9rem;
+          opacity: 0.6;
+      }
+
+
+      .features {
+          list-style: none;
+          margin: 0 0 35px;
+          padding: 0;
+      }
+
+
+      .features li {
+          position: relative;
+          padding-left: 27px;
+          margin-bottom: 14px;
+          line-height: 1.5;
+      }
+
+
+      .features li::before {
+          content: "✓";
+          position: absolute;
+          left: 0;
+          font-weight: 700;
+      }
+
+
+      .pricing-button {
+          display: block;
+          width: 100%;
+          margin-top: auto;
+          padding: 14px 20px;
+          border: 1px solid currentColor;
+          border-radius: 12px;
+          text-align: center;
+          text-decoration: none;
+          font-weight: 600;
+          transition: 0.2s ease;
+      }
+
+
+      .pricing-button:hover {
+          background: currentColor;
+          color: white;
+      }
+
+
+      .pricing-note {
+          max-width: 850px;
+          margin: 60px auto 0;
+          padding: 25px 30px;
+          border-radius: 16px;
+          background: rgba(128, 128, 128, 0.07);
+          text-align: center;
+      }
+
+
+      .pricing-note p {
+          margin: 0 0 10px;
+          line-height: 1.6;
+          font-size: 0.9rem;
+          opacity: 0.75;
+      }
+
+
+      .pricing-note p:last-child {
+          margin-bottom: 0;
+      }
+
+
+      .contact-cta {
+          margin-top: 80px;
+          text-align: center;
+      }
+
+
+      .contact-cta h2 {
+          margin-bottom: 15px;
+          font-size: 2rem;
+      }
+
+
+      .contact-cta p {
+          margin-bottom: 25px;
+          opacity: 0.7;
+      }
+
+
+      .contact-button {
+          display: inline-block;
+          padding: 15px 30px;
+          border-radius: 12px;
+          text-decoration: none;
+          font-weight: 600;
+          background: #111;
+          color: #fff;
+          transition: 0.2s ease;
+      }
+
+
+      .contact-button:hover {
+          transform: translateY(-2px);
+          opacity: 0.85;
+      }
+
+
+      /* MOBILE */
+
+
+      @media (max-width: 900px) {
+
+
+          .pricing-grid {
+              grid-template-columns: 1fr;
+              max-width: 600px;
+              margin: 0 auto;
+          }
+
+
+          .pricing-card.featured {
+              transform: none;
+          }
+
+
+          .pricing-card.featured:hover {
+              transform: translateY(-6px);
+          }
+      }
+
+
+      @media (max-width: 600px) {
+
+
+          .pricing-section {
+              padding: 70px 16px 60px;
+          }
+
+
+          .pricing-card {
+              padding: 28px 24px;
+          }
+
+
+          .pricing-header {
+              margin-bottom: 45px;
+          }
+
+
+          .pricing-note {
+              padding: 20px;
+          }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="#leistungen">Leistungen</a>
+        <a href="produkte.html">Produkte</a>
+        <a href="#projekte">Projekte</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="pricing-section">
+        <div class="pricing-header">
+          <span class="eyebrow"> Leistungen & Preise </span>
+
+          <h1>
+            Deine Website.<br />
+            Professionell umgesetzt.
+          </h1>
+
+          <p>
+            Individuelle Weblösungen für Selbstständige, kleine Unternehmen und
+            persönliche Projekte – modern, responsive und auf deine
+            Anforderungen abgestimmt.
+          </p>
+        </div>
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <h2>Starter(Aktionspreis)</h2>
+
+            <p class="description">Perfekt für deinen ersten Schritt ins Web</p>
+
+            <div class="price">
+              <span class="from"> ab </span>
+
+              <span class="amount"> 349 €* </span>
+
+              <span class="unit"> einmalig </span>
+            </div>
+
+            <ul class="features">
+              <li>Landingpage - 1 Seite</li>
+              <li>modernes, individuelles Design</li>
+              <li>Responsive für Smartphone & Tablet</li>
+              <li>Kontaktformular</li>
+              <li>inkl. 5 Bildern</li>
+              <li>1 Korrekturschleife</li>
+            </ul>
+
+            <a href="kontakt.html" class="pricing-button"> Anfrage senden </a>
+          </article>
+
+          <article class="pricing-card featured">
+            <span class="popular-badge"> BELIEBT </span>
+
+            <h2>Business (Aktionspreis)</h2>
+
+            <p class="description">
+              Für Unternehmen, die online durchstarten wollen
+            </p>
+
+            <div class="price">
+              <span class="from"> ab </span>
+
+              <span class="amount"> 599 €* </span>
+
+              <span class="unit"> einmalig </span>
+            </div>
+
+            <ul class="features">
+              <li>Website - bis zu 3 Seiten</li>
+              <li>modernes, individuelles Design</li>
+              <li>Responsive für Smartphone & Tablet</li>
+              <li>Kontaktformular</li>
+              <li>inkl. Galerie mit bis zu 20 Bildern</li>
+              <li>Basis SEO</li>
+              <li>1 Korrekturschleife</li>
+            </ul>
+
+            <a href="kontakt.html" class="pricing-button"> Anfrage senden </a>
+          </article>
+
+          <!-- =============================
+                     PRODUKT 3
+                     ============================= -->
+
+          <article class="pricing-card">
+            <h2>Premium (Aktionspreis)</h2>
+
+            <p class="description">
+              Die komplexe Lösung für anspruchsvolle Projekte
+            </p>
+
+            <div class="price">
+              <span class="from"> ab </span>
+
+              <span class="amount"> 849 €* </span>
+
+              <span class="unit"> einmalig </span>
+            </div>
+
+            <ul class="features">
+              <li>Website - ab 5 Seiten</li>
+              <li>modernes, individuelles Design</li>
+              <li>Responsive für Smartphone & Tablet</li>
+              <li>Kontaktformular</li>
+              <li>inkl. Galerie mit bis zu 50 Bildern</li>
+              <li>Basis SEO</li>
+              <li>1 Korrekturschleife</li>
+            </ul>
+
+            <a href="kontakt.html" class="pricing-button"> Anfrage senden </a>
+          </article>
+        </div>
+
+        <div class="pricing-note">
+          <p>
+            <strong>Hinweis:</strong>
+
+            Die angegebenen Preise verstehen sich als Richtwerte und können je
+            nach Umfang und individuellen Anforderungen variieren.
+          </p>
+
+          <p>
+            Externe Kosten, insbesondere für Domain, Webhosting, Server, externe
+            Dienste oder kostenpflichtige Lizenzen, sind nicht im Preis
+            enthalten und werden gegebenenfalls separat berechnet.
+          </p>
+
+          <p>
+            Gemäß § 19 UStG wird aufgrund der Anwendung der
+            Kleinunternehmerregelung keine Umsatzsteuer ausgewiesen.
+          </p>
+        </div>
+
+        <div class="contact-cta">
+          <h2>Du hast ein Projekt?</h2>
+
+          <p>
+            Erzähl mir kurz, was du vorhast. Ich melde mich anschließend bei
+            dir.
+          </p>
+
+          <a href="kontakt.html" class="contact-button"> Projekt anfragen </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -185,8 +185,8 @@
 
 
       .pricing-button:hover {
-          background: currentColor;
-          color: white;
+          background-color: rgb(255, 255, 255);
+          color: rgb(178, 178, 178);
       }
 
 
@@ -299,13 +299,29 @@
   </head>
 
   <body>
-    <header>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Hakan Johnson Startseite">
+        <span
+          >Hakan Johnson - Webentwicklung<span class="brand-dot">.</span></span
+        >
+      </a>
+
       <nav class="nav" aria-label="Hauptnavigation">
         <a href="#leistungen">Leistungen</a>
         <a href="produkte.html">Produkte</a>
         <a href="#projekte">Projekte</a>
         <a href="kontakt.html">Kontakt</a>
       </nav>
+
+      <a class="header-cta" href="kontakt.html"
+        >Projekt starten <span>↗</span></a
+      >
+      <button
+        class="menu-toggle"
+        aria-label="Menü öffnen"
+        aria-expanded="false">
+        ☰
+      </button>
     </header>
 
     <main>
